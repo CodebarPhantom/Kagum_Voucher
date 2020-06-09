@@ -114,7 +114,7 @@ $nextWeek = date("d-m-Y", $minDate);
 
 				<div class="container-contact100-form-btn">
 					<button id="submit22" type="submit" class="contact100-form-btn">
-						Send
+						Redeem
 					</button>
 				</div>
 
