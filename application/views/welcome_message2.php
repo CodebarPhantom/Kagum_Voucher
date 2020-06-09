@@ -112,8 +112,26 @@ $nextWeek = date("d-m-Y", $minDate);
 				</div>
 				<?php } ?>
 
+				<div class="wrap-input100 validate-input" data-validate="Status is required">
+					<label class="label-input100" for="status">Status</label>
+					<?php
+					if($voucher_data->status_voucher === '1'){
+						$status = 'Not Used';
+					}else if($voucher_data->status_voucher === '2'){
+						$status = 'Booked';
+					}else if($voucher_data->status_voucher === '0'){
+						$status = 'Used';
+					}
+					?>
+					<input class="input100" type="text" name="" read-only value="<?php echo $status; ?>">
+					
+
+					<span class="focus-input100"></span>
+
+				</div>
+
 				<div class="container-contact100-form-btn">
-					<button id="submit22" type="submit" class="contact100-form-btn">
+					<button id="submit22" type="submit" class="contact100-form-btn" <?php if($voucher_data->status_voucher === '0'){echo 'disabled';} ?>>
 						Redeem
 					</button>
 				</div>
