@@ -191,8 +191,8 @@ iframe {
 /*==================================================================
 [ Background ]*/
 .bg1 {background: #3b5998;}
-.bg2 {background: #1da1f2;}
-.bg3 {background: #cd201f;}
+.bg2 {background: #dd2a7b;}
+.bg3 {background: #0e76a8;}
 
 
 /*//////////////////////////////////////////////////////////////////
@@ -433,6 +433,19 @@ textarea.input100 {
   padding-top: 10px;
 }
 
+.container-contact100-form-btn-success {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+
 .contact100-form-btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -492,7 +505,38 @@ textarea.input100 {
 }
 
 .contact100-form-btn-warning:hover {
-  background: #f1c40f;
+  background: #d35400;
+}
+
+.contact100-form-btn-success{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  background: #A3CB38;
+
+  font-family: Montserrat-Bold;
+  font-size: 12px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contact100-form-btn-success:hover {
+  background: #009432;
 }
 
 

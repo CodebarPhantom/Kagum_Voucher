@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Redemption Voucher Booking</title>
+	<title>Modify Voucher Booking</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="Voucher Hotel Hebat - KAGUM HOTELS by Eryan Fauzan">
@@ -13,7 +13,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<meta name="googlebot" content="noindex"/>
 	<meta name="robots" content="noindex, nofollow"/>
 <!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="<?php echo base_url();?>assets/voucher/images/icons/favicon.ico"/>
+	<link rel="icon" type="image/png" href="<?php echo base_url();?>assets/voucher/images/icons/favicon.png"/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/voucher/vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
@@ -119,16 +119,16 @@ $nextWeek = date("d-m-Y", $minDate);
 				</div>
 
 				<div class="contact100-form-social flex-c-m">
-					<a href="#" class="contact100-form-social-item flex-c-m bg1 m-r-5">
+					<a href="https://www.facebook.com/KagumHotels" class="contact100-form-social-item flex-c-m bg1 m-r-5">
 						<i class="fa fa-facebook-f" aria-hidden="true"></i>
 					</a>
 
-					<a href="#" class="contact100-form-social-item flex-c-m bg2 m-r-5">
-						<i class="fa fa-twitter" aria-hidden="true"></i>
+					<a href="http://instagram.com/kagumhotels" class="contact100-form-social-item flex-c-m bg2 m-r-5">
+						<i class="fa fa-instagram" aria-hidden="true"></i>
 					</a>
 
-					<a href="#" class="contact100-form-social-item flex-c-m bg3">
-						<i class="fa fa-youtube-play" aria-hidden="true"></i>
+					<a href="https://www.linkedin.com/company/kagum-hotels/" class="contact100-form-social-item flex-c-m bg3">
+						<i class="fa fa-linkedin" aria-hidden="true"></i>
 					</a>
 				</div>
 			</form>
@@ -196,8 +196,8 @@ $nextWeek = date("d-m-Y", $minDate);
 			<script type="text/javascript">
 			$(function(){
 				swal({
-                title: 'Mantap',
-                text: 'Mantap Mantap',
+                title: 'Thank you for choosing to stay with KAGUM Hotels.',
+                text: 'We are looking forward to welcoming you!',
             	icon: 'success',
                 confirmButtonClass: 'btn btn-primary'
                 });

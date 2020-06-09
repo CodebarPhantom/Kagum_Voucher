@@ -13,7 +13,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<meta name="googlebot" content="noindex"/>
 	<meta name="robots" content="noindex, nofollow"/>
 <!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="<?php echo base_url();?>assets/voucher/images/icons/favicon.ico"/>
+	<link rel="icon" type="image/png" href="<?php echo base_url();?>assets/voucher/images/icons/favicon.png"/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/voucher/vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
@@ -110,33 +110,39 @@ $nextWeek = date("d-m-Y", $minDate);
 
 				<div class="container-contact100-form-btn">
 					<button id="submit22" type="submit" class="contact100-form-btn">
-						Send
+						Redeem
 					</button>
-				</div>
-
-
-				
+				</div>			
 
 				<div class="container-contact100-form-btn-warning">
 					<span class="contact100-form-subtitle">
-						Ingin Ubah Voucher Klik Modify
+						Please click here to change your reservation details
 					</span>
 					<button type="button" class="contact100-form-btn-warning" data-toggle="modal" data-target="#exampleModalCenter">
-						Modify
+						Reservation Details
+					</button>
+				</div>
+
+				<div class="container-contact100-form-btn-success">
+					<span class="contact100-form-subtitle">
+						Need help how to book? click here for more information
+					</span>
+					<button type="button" class="contact100-form-btn-success" data-toggle="modal" data-target="#exampleModalCenter1">
+						How to Book
 					</button>
 				</div>
 
 				<div class="contact100-form-social flex-c-m">
-					<a href="#" class="contact100-form-social-item flex-c-m bg1 m-r-5">
+					<a href="https://www.facebook.com/KagumHotels" class="contact100-form-social-item flex-c-m bg1 m-r-5">
 						<i class="fa fa-facebook-f" aria-hidden="true"></i>
 					</a>
 
-					<a href="#" class="contact100-form-social-item flex-c-m bg2 m-r-5">
-						<i class="fa fa-twitter" aria-hidden="true"></i>
+					<a href="http://instagram.com/kagumhotels" class="contact100-form-social-item flex-c-m bg2 m-r-5">
+						<i class="fa fa-instagram" aria-hidden="true"></i>
 					</a>
 
-					<a href="#" class="contact100-form-social-item flex-c-m bg3">
-						<i class="fa fa-youtube-play" aria-hidden="true"></i>
+					<a href="https://www.linkedin.com/company/kagum-hotels/" class="contact100-form-social-item flex-c-m bg3">
+						<i class="fa fa-linkedin" aria-hidden="true"></i>
 					</a>
 				</div>
 			</form>
@@ -160,7 +166,7 @@ $nextWeek = date("d-m-Y", $minDate);
 		<div class="modal-body">
 			<div class="container-contactlol">
 				<div class="wrap-contact1000">
-						<div class="wrap-input100 validate-input" data-validate="Voucher is required">
+						<div class="wrap-input100" data-validate="Voucher is required">
 							<input  class="input100" type="text" name="idvoucher" minlength="19" maxlength="19" placeholder="Enter your voucher..." required>
 							<span class="focus-input100"></span>
 						</div>			
@@ -170,6 +176,28 @@ $nextWeek = date("d-m-Y", $minDate);
 		<div class="modal-footer">
 			
 			<button type="submit" class="btn btn-primary">Search Voucher</button>
+		</div>
+		</form>
+		</div>
+	</div>
+	</div>
+
+	<div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+		<div class="modal-header">
+			<h5 class="modal-title" id="exampleModalLongTitle">How To Book</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		<form action="<?php echo base_url()?>voucher/search_voucher" method="post" accept-charset="utf-8" class="">				
+
+		<div class="modal-body">
+			123
+		</div>
+		<div class="modal-footer">			
+			
 		</div>
 		</form>
 		</div>
@@ -248,9 +276,9 @@ $nextWeek = date("d-m-Y", $minDate);
 					success: function(msg) {
 						$('#msg2').show();
 						$("#msg2").html(msg);
-						console.log(msg);
+						//console.log(msg);
 						if(msg === '<span class="label-input100 text-success">Email is valid</span>'){
-							$( "#submit" ).prop( "disabled", false );
+							$( "#submit22" ).prop( "disabled", false );
 						}
 						
 					},
@@ -287,8 +315,8 @@ $nextWeek = date("d-m-Y", $minDate);
 			<script type="text/javascript">
 			$(function(){
 				swal({
-                title: 'Sudah Terbooking',
-                text: 'Mantap Mantap',
+                title: 'Thank you for choosing to stay with KAGUM Hotels.',
+                text: 'We are looking forward to welcoming you!',
             	icon: 'success',
                 confirmButtonClass: 'btn btn-primary'
                 });

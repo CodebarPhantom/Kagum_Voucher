@@ -6,7 +6,7 @@ if (!defined('BASEPATH'))
 class Voucher_hotels_model extends CI_Model
 {
     public function getDataParent($table, $order_column, $parent, $order_type ){
-        $this->db->where("parent = '$parent' and status = 'active' ");
+        $this->db->where("parent = '$parent' and status = 'active' and not (idhotels ='GFUB' OR idhotels='GFVL')");
         $this->db->order_by("$order_column", "$order_type");
         $query = $this->db->get("$table");
         $result = $query->result();
