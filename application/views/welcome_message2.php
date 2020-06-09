@@ -59,6 +59,7 @@ $nextWeek = date("d-m-Y", $minDate);
 					<input class="input100" type="hidden" name="emailvoucher" read-only value="<?php echo $voucher_data->guest_email; ?>">
 
 					<span class="focus-input100"></span>
+					<?php if($voucher_data->status_voucher === '0'){echo '<div class=""><span class="label-input100 text-danger">Voucher is Used</span></div>';} ?>
 
 				</div>
 
