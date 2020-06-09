@@ -117,6 +117,10 @@ $nextWeek = date("d-m-Y", $minDate);
 						Redeem
 					</button>
 				</div>
+				<div class="container-contact100-form-btn-success">
+					<a href="<?php echo base_url();?>" style="text-decoration: none; color:white;" class="contact100-form-btn-success">Back</a>
+					
+				</div>
 
 				<div class="contact100-form-social flex-c-m">
 					<a href="https://www.facebook.com/KagumHotels" class="contact100-form-social-item flex-c-m bg1 m-r-5">
