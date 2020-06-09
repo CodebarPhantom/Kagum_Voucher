@@ -323,6 +323,19 @@ $nextWeek = date("d-m-Y", $minDate);
 			});
 			</script>
 <?php }?>
+
+<?php if ($this->session->flashdata('search_notfound')) {?>   
+			<script type="text/javascript">
+			$(function(){
+				swal({
+                title: 'Voucher ID Not Found',
+                text: 'There is no matching Voucher ID!',
+            	icon: 'error',
+                confirmButtonClass: 'btn btn-primary'
+                });
+			});
+			</script>
+<?php }?>
 	
 <!--===============================================================================================-->
 	<script src="<?php echo base_url();?>assets/voucher/vendor/daterangepicker/moment.min.js"></script>

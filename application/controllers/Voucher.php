@@ -78,7 +78,18 @@ class Voucher extends CI_Controller {
 	public function search_voucher(){
 		$idVoucher = $this->input->post('idvoucher',TRUE);
 		$page_data['voucher_datas'] = $this->Voucher_hotels_model->get_data_voucher($idVoucher);
+		$count_voucher = $this->Voucher_hotels_model->get_data_voucher_count($idVoucher);
+
+		
+		if($count_voucher->count_idvoucher == 0){
+			$this->session->set_flashdata('search_notfound','message');   
+			redirect('voucher');
+
+		}else{
 		$this->load->view('welcome_message2',$page_data);
+
+		}
+
         
 
 	}
