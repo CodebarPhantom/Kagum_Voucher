@@ -85,8 +85,11 @@ class Voucher extends CI_Controller {
 			$this->session->set_flashdata('search_notfound','message');   
 			redirect('voucher');
 
+		}else if($count_voucher->count_idvoucher == 1 && $count_voucher->status_voucher == 0){
+			$this->session->set_flashdata('search_used','message');   
+			redirect('voucher');
 		}else{
-		$this->load->view('welcome_message2',$page_data);
+			$this->load->view('welcome_message2',$page_data);
 
 		}
 

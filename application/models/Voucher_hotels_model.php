@@ -57,7 +57,7 @@ class Voucher_hotels_model extends CI_Model
     }
 
     function get_data_voucher_count($idVoucher){
-        $this->db->select('count(idvoucher) as count_idvoucher');
+        $this->db->select('count(idvoucher) as count_idvoucher, status_voucher');
         $this->db->from('smartreport_voucherhotels');  
         $this->db->where('idvoucher', $idVoucher);
         return $this->db->get()->row();
