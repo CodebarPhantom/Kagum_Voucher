@@ -48,7 +48,7 @@ $nextWeek = date("d-m-Y", $minDate);
 		<div class="wrap-contact100">
 			<form action="<?php echo base_url()?>voucher/bookingVoucher" method="post" accept-charset="utf-8" class="contact100-form validate-form" id="inputVoucherHotelsData">
 				<span class="contact100-form-title">
-					Redemption Voucher Booking
+					Redeem Voucher HEBAT
 				</span>
 
 				<div class="wrap-input100 validate-input" data-validate="Voucher is required">

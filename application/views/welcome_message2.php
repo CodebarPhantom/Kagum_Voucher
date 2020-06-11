@@ -50,7 +50,7 @@ $nextWeek = date("d-m-Y", $minDate);
 			<?php foreach ($voucher_datas as $voucher_data){?>
 				
 				<span class="contact100-form-title">
-					Modify Voucher Booking
+					Modify Voucher HEBAT
 				</span>
 
 				<div class="wrap-input100 validate-input" data-validate="Voucher is required">
