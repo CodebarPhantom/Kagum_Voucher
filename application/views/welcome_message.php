@@ -147,7 +147,7 @@ $nextWeek = date("d-m-Y", $minDate);
 				</div>
 			</form>
 
-			<div class="contact100-more flex-col-c-m " style="background-image: url('<?php echo base_url();?>assets/voucher/images/bg-01.jpg');">
+			<div class="contact100-more flex-col-c-m " style="background-image: url('<?php echo base_url();?>assets/voucher/images/bg-01.jpeg');">
 			</div>
 		</div>
 	</div>
